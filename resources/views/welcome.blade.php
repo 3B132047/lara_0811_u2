@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<a href = "{{ route('hello.index') }}">Hello</a>
+<a href = "{{ route('hello.index',['name'=>'tom']) }}">Hello2</a>
+<a href = "/hello/tom">Hello3</a>
+ <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">

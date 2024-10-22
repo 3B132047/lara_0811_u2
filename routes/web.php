@@ -18,12 +18,12 @@ Route::get('/', function () {
 Route::get('/', function () {
     return 'welcome';
 });
-Route::get('r2', function () {
-    return redirect('welcome');
-});
 Route::get('r1', function () {
     return redirect('r2');
 });
 Route::get('hello/{name?}', function ($name = 'Everbody') {
+    return 'Hello,'.$name;
+});
+Route::get('hello.index', function ($name = 'Everbody') {
     return 'Hello,'.$name;
 });
